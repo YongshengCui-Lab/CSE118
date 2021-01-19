@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ViewImages"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="99dp"
+        android:text="view_images"
+        app:layout_constraintBottom_toTopOf="@+id/SearchImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DownloadImage" />
+
+    <Button
+        android:id="@+id/DownloadImage"
+        android:layout_width="160dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="65dp"
+        android:text="download_images"
+        app:layout_constraintBottom_toTopOf="@+id/ViewImages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/SearchImage"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="135dp"
+        android:text="search_images"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewImages" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
